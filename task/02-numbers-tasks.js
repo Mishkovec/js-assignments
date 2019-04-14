@@ -56,13 +56,8 @@ function getCicleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-    throw new Error('Not implemented');
-    // if (value1 < 0 || value2 < 0) {
-    //     return 0;
-    // } else {
-    //     let avrg = (value1 + value2) / 2;
-    //     return avrg;
-    // }
+    // throw new Error('Not implemented');
+    return value1 / 2 + value2 / 2;
 }
 
 /**
@@ -121,12 +116,13 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (1,2)     => 0
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
-    throw new Error('Not implemented');
-    // let mult = x1 * y1 + x2 * y2;
-    // let modA = Math.sqrt(Math.pow(x1, 2) + Math.pow(y1, 2));
-    // let modB = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
-    // let modMult = modA * modB;
-    // return mult / modMult;
+    //throw new Error('Not implemented');
+    //  let mult = x1 * y1 + x2 * y2;
+    //  let modA = Math.sqrt(Math.pow(x1, 2) + Math.pow(y1, 2));
+    //  let modB = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
+    //  let modMult = modA * modB;
+    //  return Math.acos(mult / modMult);
+    return Math.acos( (x1 * x2 + y1 * y2) / ( Math.sqrt(x1*x1 + y1*y1) * Math.sqrt(x2*x2 + y2*y2) ) )
 }
 
 /**
